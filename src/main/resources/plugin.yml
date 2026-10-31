@@ -1,0 +1,14 @@
+name: NetherPortac
+version: ${project.version}
+main: netherportac.NetherPortac
+api-version: 1.12
+description: Remembers which nether portals are linked so players always return to the portal they came from.
+commands:
+  netherportac:
+    description: NetherPortac admin commands
+    usage: /<command> <info|unlink|reload>
+    permission: netherportac.admin
+permissions:
+  netherportac.admin:
+    description: Use /netherportac
+    default: op

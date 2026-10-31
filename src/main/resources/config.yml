@@ -1,0 +1,17 @@
+# NetherPortac - remembers nether portal links.
+#
+# When a player walks through portal A and comes out at portal B, the plugin
+# remembers A <-> B. The next time that player walks through B they go back
+# to A, instead of vanilla picking whichever portal happens to be closest
+# (often a friend's base) or building a brand new one.
+
+# Remember links per player. With this on, two friends whose overworld
+# portals both lead to the same nether portal each get sent back to their
+# own base. Turn off to share one set of links between everyone.
+per-player-links: true
+
+# Let mobs, items and minecarts use the shared links too.
+link-entities: true
+
+# How often (in seconds) to save links to disk. They are also saved on shutdown.
+save-interval-seconds: 60
